@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Uses ruby 2.6.1
 
-Things you may want to cover:
+Simualtes the logic of a user making a post and other users making comments on the post. 
 
-* Ruby version
+Feel free to test however you like.
 
-* System dependencies
+```console
+$ git clone https://github.com/Pstyne/micro-reddit.git
+$ cd micro-reddit
+$ bundle install
+$ rails db:migrate
+$ rails console
+Running via Spring preloader in process 21660
+Loading development environment (Rails 5.2.4.1)
+irb(main):001:0> u = User.new(name: "bob", email: "bob@bomb.com", password: "booboo", password_confirmation: "booboo")
+```
 
-* Configuration
+Getting errors? Try this:
 
-* Database creation
+>/micro-reddit/.ruby-version
 
-* Database initialization
+Replace `2.6.1` with your version
 
-* How to run the test suite
+As well as changing ruby version in gem file then continue from `bundle install`
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
